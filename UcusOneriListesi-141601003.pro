@@ -20,6 +20,18 @@ Clauses
 	ucus(istanbul,antalya).
 	ucus(istanbul,bodrum).
 	ucus(istanbul,dalaman).
+	ucus(ankara,istanbul).
+	ucus(ankara,bodrum).
+	ucus(ankara,gaziantep).
+	ucus(ankara,antalya).
+	ucus(ankara,trabzon).
+	ucus(ankara,denizli).
+	ucus(izmir,ankara).
+	ucus(izmir,istanbul).
+	ucus(izmir,gaziantep).
+	ucus(antalya,istanbul).
+	ucus(antalya,ankara).
+	ucus(antalya,gaziantep).
 	ucus(bodrum, istanbul).
 	ucus(bodrum, ankara).
 	ucus(dalaman,ankara).
@@ -28,16 +40,8 @@ Clauses
 	ucus(denizli, ankara).
 	ucus(trabzon,istanbul).
 	ucus(trabzon, ankara).
-	ucus(ankara,istanbul).
-	ucus(ankara,bodrum).
 	ucus(gaziantep,istanbul).
 	ucus(gaziantep,ankara).
-	ucus(izmir,ankara).
-	ucus(izmir,istanbul).
-	ucus(izmir,gaziantep).
-	ucus(antalya,istanbul).
-	ucus(antalya,ankara).
-	ucus(antalya,gaziantep).
 	
 	%rota
 	rota(Sehir1,Sehir2,UcusListem):-
@@ -51,4 +55,4 @@ Clauses
 		not(uye(Sehir3,UcusListem)),
 		rota(Sehir3,Sehir2,Dinlenme,Listem1).
 Goal
-	rota(istanbul, gaziantep, UcusListem).
+	rota(istanbul, ankara, UcusListem).
